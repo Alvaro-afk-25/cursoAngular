@@ -15,6 +15,12 @@ export class FrutaComponent {
     public mayordeeada: boolean= true;
     public trabajos:Array<any>=['carpungtero', 'albañil',12];
     comondin:any = 10
+
+    constructor(){
+        ldvlsknvlskndv
+
+    }
+
 }
 
 
