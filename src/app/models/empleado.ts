@@ -13,6 +13,7 @@ export class empleado {
 
     //Aqui optimizamos codigo llamando directamente desde el el contructor lo que queremos \
 
+    
     constructor(public nombre: string,
         public edad: number,
         public cargo: string,
