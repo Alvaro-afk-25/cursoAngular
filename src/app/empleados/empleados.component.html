@@ -1,2 +1,70 @@
-<h2>{{titulo}}</h2>
-<p>{{emplea}}</p>
+
+<!-- Aquiu con los dos corchetes se puede usar variables dentro del component.ts -->
+
+<h3>{{titulo}}</h3>
+
+<hr/>
+    
+    <div *ngIf="trabajador_externo == false">
+        <strong> EMpleado estrlla:</strong>
+        <br/>
+        <br/>
+        <!--AQQUI PODEMOS VER UN EJEMPLO DE DIRECTIVA EN ESTE CASO EN EL CLICK DEL BOTON QUE USA UNA FUNCION DE LA CLASE .COMPONENT-->
+        <button (click)="cambiarExterno(true)">MOstrar empleado</button>
+        <ul >
+            <!-- Usamos el li para mostar con una vineta para un array con una sola fila-->
+            <li>{{empleadoModel?.nombre}}</li> 
+            <li>{{empleadoModel?.edad}}</li>
+            <li *ngIf="empleadoModel?.contrato==true">Esta Contratado</li>
+            <li *ngIf="empleadoModel?.contrato==false"> no Esta Contratado</li>
+            <li >{{empleadoModel?.cargo}}</li>
+        </ul>
+    
+    </div>
+    
+    <div *ngIf="trabajador_externo == true">
+        
+    <strong> trabajador estrella</strong>
+    <br/>
+    <br/>
+    <button (click)="cambiarExterno(false)">MOstrar trabajador</button>
+    <ul >
+        <!-- Usamos el li para mostar con una vineta para un array con varias filas incluso se usan los corchetea []-->
+        <li>{{trabajadores[1].nombre}}</li> 
+        <li>{{trabajadores[1].edad}}</li>
+        <li *ngIf="trabajadores[0].contrato==true">Esta Contratado</li>
+        <li *ngIf="trabajadores[0].contrato==false"> no Esta Contratado</li>
+        <li>{{trabajadores[1].cargo}}</li>
+    </ul>
+
+
+    </div>
+
+    <hr/>
+    <!--Aqui usamos ladirectiva html ngfor que nos ayuda a interar un array que esta definido en el component.ts -->
+<h3>Listado de empleados </h3>
+<ul >
+<li *ngFor="let empleado of trabajadores; let i=index">
+    <strong>Empleado {{i+1}}</strong>
+    <ul>
+        <li>{{empleado.nombre}}</li> 
+            <li>{{empleado.edad}}</li>
+            <li *ngIf="empleado.contrato==true">Esta Contratado</li>
+            <li *ngIf="empleado.contrato==false"> no Esta Contratado</li>
+            <li >{{empleado.cargo}}</li>
+    </ul>
+</li>
+</ul>
+ 
+    
+<hr/>
+
+
+    <h3>
+        Colores switch
+    </h3>
+    <ul >
+        <li>
+
+        </li>
+    </ul>

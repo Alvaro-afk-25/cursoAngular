@@ -1,0 +1,3 @@
+Las directivas 
+son pequenas funcionalidades que se utilizan en la vistas por ejemplo una etiqueta, un atributo html que nos da anf=gular.
+en resumen es una funcionalidad de las vistas o directamente el html

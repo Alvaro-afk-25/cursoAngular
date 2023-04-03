@@ -33,9 +33,24 @@ export class FrutaComponent {
     ngOnInit(){
         this.cambiarnombre();
         this.cambiaredad(77);
-        alert(this.nombre+' '+this.edad);     
-    }
+        alert(this.nombre+' '+this.edad);    
+        
 
+        // Variables y alcance 
+
+     var uno = 1;
+     var dos = 2;
+
+     if (uno==1 ) {
+        //AQui la variable con tipo de dato let solo fi=uncionara dentro de la sentencia if
+        let uno = 3;
+        var dos= 88;
+        //ejemplo del let con nombre uno y tambien del dos que en este caso es un var que se unsa a novel de todo el sistema
+        console.log('Dentro del if '+ uno+ ' '+ dos )
+     }
+// ejemplo del var con nombre uno 
+     console.log('FUera del if '+ uno+  ' ' + dos )
+    }
 
     cambiarnombre(){
         this.nombre='alvaro'

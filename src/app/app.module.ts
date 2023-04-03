@@ -16,6 +16,7 @@ import { FrutaComponent } from "./fruta/fruta.component";
   imports: [
     BrowserModule,
     AppRoutingModule
+    
   ],
   providers: [],
   bootstrap: [AppComponent]
