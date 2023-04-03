@@ -63,8 +63,7 @@
     <h3>
         Colores switch
     </h3>
-    <ul >
-        <li>
-
+    <ul [ngSwitch]="color">
+        <li *ngSwitchCase="'red'"> Es de color rojo 
         </li>
     </ul>

@@ -20,7 +20,7 @@ export class EmpleadosComponent{
 // usamos esta variable para ver las directivas del html 
     public trabajador_externo:boolean | undefined; 
 // respetando lo de los metodos de orientar a objetos las variables se definen en el  contructor 
-public color : string | undefined ;
+public color : string ;
    
 
 

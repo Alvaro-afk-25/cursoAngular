@@ -1,3 +1,8 @@
 Las directivas 
 son pequenas funcionalidades que se utilizan en la vistas por ejemplo una etiqueta, un atributo html que nos da anf=gular.
 en resumen es una funcionalidad de las vistas o directamente el html
+
+
+para elegir opciones en las directivas de html podemos usar primero el ngSwitch para mandarle 
+la funcion y luego dentro de un li mandamos otra directiva llamada *ngswitchcase y le madamos  lo que puede ser segun lo que veamos en nuestralogica
+
