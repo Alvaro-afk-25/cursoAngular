@@ -6,3 +6,9 @@ en resumen es una funcionalidad de las vistas o directamente el html
 para elegir opciones en las directivas de html podemos usar primero el ngSwitch para mandarle 
 la funcion y luego dentro de un li mandamos otra directiva llamada *ngswitchcase y le madamos  lo que puede ser segun lo que veamos en nuestralogica
 
+choway data binding 
+si cambio algo en un imput tambien se va amodificar en todo sin actualizar nada 
+los chooway por lo general tienen siempre esteb modelo :
+[()] ya que de esta manera podemos hacer cambios en la interfaz sin la intervencio =n de actualizacione se
+
+
